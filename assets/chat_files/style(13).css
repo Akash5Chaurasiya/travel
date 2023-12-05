@@ -1,0 +1,1 @@
+.sidebar-rating{background:var(--color-white);border:1px solid var(--color-border);border-radius:var(--border-radius-default);padding:22px 20px 26px}.sidebar-rating__rating-wrap{margin-top:5px}.sidebar-rating p{margin:0}.sidebar-rating p~p{margin-top:3px}@media screen and (min-width: 1024px){.sidebar-rating{padding:22px 30px 26px}}

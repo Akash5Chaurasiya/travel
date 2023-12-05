@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Miller Display Bold";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		url(MillerDisplayBold/font.woff2) format("woff2"),
+		url(MillerDisplayBold/font.woff) format("woff");
+}
+
+@font-face {
+	font-family: "Miller Display Bold";
+	font-display: swap;
+	font-style: italic;
+	font-weight: 500;
+	src:
+		url(MillerDisplaySemiBoldItalic/font.woff2) format("woff2"),
+		url(MillerDisplaySemiBoldItalic/font.woff) format("woff");
+}

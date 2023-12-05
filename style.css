@@ -3,34 +3,31 @@
     height: 32px;
 }
 
-/* Styling for the company logo */
 .company-logo {
     height: 100px;
-    /* Set the desired height */
     width: 210px;
-    /* Set the desired width */
-    /* Adjust as needed */
 }
 
-/* Styling for the main navigation container */
 .nav-main {
     display: flex;
     flex-direction: row;
-    /* Horizontal arrangement of items */
     justify-content: space-between;
-    /* Evenly distribute items along the main axis */
     align-items: center;
     position: relative;
-    /* Center items vertically */
-    /* Adjust as needed */
+    top: auto;
+    left: auto;
+    right: auto;
+    height: 100%;
+    overflow: visible;
+    opacity: 1;
+    z-index: 6;
 }
 
-/* Styling for individual menu items */
 .menu-item {
     margin-right: 20px;
-    /* Adjust spacing between menu items */
     display: inline-block;
     align-self: center;
+
 }
 
 .header-main {
@@ -59,6 +56,9 @@
     display: block;
     margin: 0 14px;
     color: #5b6a6a;
+    font-weight: bold;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif"
 }
 
 @media screen and (max-width: 1250px) {
@@ -82,6 +82,7 @@
     display: block;
     /* Ensure the <a> tag takes the full space of the button */
     text-decoration: none;
+    margin-left: 10px;
     /* Remove underline on hover */
 }
 
@@ -171,7 +172,7 @@
     text-align: center;
     color: #fff;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,.45);
     border-radius: 5px;
 }
 
@@ -182,9 +183,7 @@
 
 .image-text p {
     font-size: 1.2rem;
-    /* Adjust paragraph font size */
     line-height: 1.5;
-    /* Adjust line height for better readability */
 }
 
 .heading {
@@ -200,6 +199,8 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: #5b6a6a;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 15px;
 
 }
 
@@ -255,11 +256,17 @@ input[type="submit"]:hover {
 }
 
 .high-class {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #373e3e;
     width: calc(30% - 12px);
     justify-content: center;
     /* Horizontally center content */
     align-items: center;
+    border-radius: 8px;
+    height: 600px;
+    padding: 20px 30px;
+    min-height: 180px;
+    max-width: 95vw;
+    gap: 18px;
     /* Vertically center content */
 }
 
@@ -340,7 +347,7 @@ input[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1290px) {
     .header-main__nav {
         display: none;
     }
@@ -352,7 +359,7 @@ input[type="submit"]:hover {
 }
 
 /* For screens larger than 768px, show the navigation */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1290px) {
     .header-main__nav {
         display: block;
     }
@@ -382,4 +389,37 @@ input[type="submit"]:hover {
 /* Display the mobile menu when the hamburger icon is clicked */
 .hamburger-menu.active .mobile-menu {
     display: block;
+}
+h2{
+    color: white;
+}
+.feature {
+    flex-direction: row;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.feature img {
+    max-width: 80px; /* Adjust image width if needed */
+    margin-right: 10px;
+}
+
+#responsiveBtn {
+    padding: 20px 180px;
+    background-color: teal;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 25px;
+}
+@media screen and (max-width: 1290px) {
+    #responsiveBtn {
+        padding: 20px 100px;
+        font-size: 12px;
+    }
+}
+.header-main__lvl-one{
+    display: flex;
+    align-items: center;
+    padding: 0;
 }

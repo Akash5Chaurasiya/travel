@@ -103,17 +103,21 @@
         </header>
     </div>
     <div class="nav-2">
-        <div>
-            <a href="">TRUST PILOT RATED EXCELLENT</a>
+        <div class="feature">
+            <img src="./assets/cal.webp" alt="">
+            <p style="text-decoration: none; color: #333;" href="">TRUST PILOT <br> RATED EXCELLENT</p>
         </div>
-        <div>
-            <a href="">REFUND GUARANTEE</a>
+        <div class="feature">
+            <img src="./assets/up.webp" alt="">
+            <p style="text-decoration: none; color: #333;" href="">REFUND GUARANTEE</p>
         </div>
-        <div>
-            <a href="">FLEXIBLE BOOKINGS</a>
+        <div class="feature">
+            <img src="./assets/star.webp" alt="">
+            <p style="text-decoration: none; color: #333;" href="">FLEXIBLE BOOKINGS</p>
         </div>
-        <div>
-            <a href="">EXPERT LOCAL GUIDES</a>
+        <div class="feature">
+            <img src="./assets/star.webp" alt="">
+            <p style="text-decoration: none; color: #333;" href="">EXPERT <br>LOCAL GUIDES</p>
         </div>
     </div>
     <div class="image-container">
@@ -121,9 +125,10 @@
             src="https://res.cloudinary.com/enchanting/q_80,f_auto,c_lfill,w_1600,h_400,g_auto/exodus-web/2022/07/armenia-2.jpg"
             alt="Armenia">
         <div class="image-text">
-            <h1>Armenia Tours</h1>
+            <h1 style="font-family: 'Merriweather Sans', sans-serif">Armenia Tours</h1>
             <div>
-                <p>Where Asia and Europe meet in a symphony of mountains, history, and tradition</p>
+                <p style="font-family: 'Merriweather Sans', sans-serif">Where Asia and Europe meet in a symphony of
+                    mountains, history, and tradition</p>
             </div>
         </div>
     </div>
@@ -152,28 +157,53 @@
             <button onclick="toggleReadMore()">See More</button>
         </div>
         <div class="high-class">
-            <h2>Make an enquiry</h2>
+            <h2 style="font-family: 'Merriweather Sans', sans-serif">Make an enquiry</h2>
             <form class="form-class" action="" method="">
                 <div>
-                    <label for="destination">Destination:</label>
-                    <input type="text" id="destination" name="destination" required>
+                    <label style="color: white; margin: 10px;font-family: 'Merriweather Sans', sans-serif" " for="
+                        destination">Destination:</label>
+                    <input style="padding: 15px;" type="text" id="destination" name="destination" required>
                 </div>
                 <div>
-                    <label for="departureDate">Departure Date:</label>
-                    <input type="date" id="departureDate" name="departureDate" required>
+                    <label style="color: white; margin: 10px;font-family: 'Merriweather Sans', sans-serif" " for="
+                        departureDate">Departure Date:</label>
+                    <input style="padding: 15px;" type="date" id="departureDate" name="departureDate" required>
                 </div>
                 <div>
-                    <label for="passengers">Number of Passengers:</label>
-                    <input type="number" id="passengers" name="passengers" required>
+                    <label style="color: white; margin: 10px;font-family: 'Merriweather Sans', sans-serif" " for="
+                        passengers">Number of Passengers:</label>
+                    <input style="padding: 15px;" type="number" id="passengers" name="passengers" required>
                 </div>
                 <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label style="color: white; margin: 10px;font-family: 'Merriweather Sans', sans-serif"
+                        for="message">Message:</label>
+                    <textarea style="padding: 15px;" id="message" name="message" rows="4" required></textarea>
                 </div>
                 <div>
-                    <input type="submit" value="Submit">
+                    <button id="responsiveBtn">NEXT</button>
                 </div>
             </form>
+        </div>
+    </div>
+    <div
+        style="border: 1px solid #000; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 15px; grid-row-gap: 20px; background-color: #333; padding: 5vw; margin-top: 5vw; border-radius: 8px;">
+        <div style="text-align: center; letter-spacing: 1.5px; line-height: 1;">
+            <img width="50px" height="50px" src="./assets/phone.png" alt="">
+            <h4 style="color: white; font-size: 18px; font-family: 'Merriweather Sans', sans-serif;">
+                CALL US ANYTIME
+            </h4>
+        </div>
+        <div style="text-align: center; letter-spacing: 1.5px; line-height: 1;">
+            <img src="./assets/cal.webp" alt="">
+            <h4 style="color: white; font-size: 18px; font-family: 'Merriweather Sans', sans-serif;">
+                SEND US MESSAGE
+            </h4>
+        </div>
+        <div style="text-align: center; letter-spacing: 1.5px; line-height: 1;">
+            <img width="50px" height="50px" src="./assets/chat.jpg" alt="">
+            <h4 style="color: white; font-size: 18px; font-family: 'Merriweather Sans', sans-serif;">
+                CHAT WITH US NOW
+            </h4>
         </div>
     </div>
     <script src="./index.js"></script>

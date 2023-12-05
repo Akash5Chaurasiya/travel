@@ -1,0 +1,131 @@
+/* merriweather-sans-300 - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src:
+		local(""),
+		url(normal/merriweather-sans-300.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(normal/merriweather-sans-300.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-350 - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 350;
+	font-display: swap;
+	src:
+		local(""),
+		url(normal/merriweather-sans-350.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(normal/merriweather-sans-350.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-regular - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src:
+		local(""),
+		url(normal/merriweather-sans-regular.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(normal/merriweather-sans-regular.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-500 - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src:
+		local(""),
+		url(normal/merriweather-sans-500.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(normal/merriweather-sans-500.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-700 - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src:
+		local(""),
+		url(normal/merriweather-sans-700.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(normal/merriweather-sans-700.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-800 - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src:
+		local(""),
+		url(normal/merriweather-sans-800.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(normal/merriweather-sans-800.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-300italic - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+	src:
+		local(""),
+		url(italic/merriweather-sans-300italic.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(italic/merriweather-sans-300italic.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-350italic - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: italic;
+	font-weight: 350;
+	font-display: swap;
+	src:
+		local(""),
+		url(italic/merriweather-sans-350italic.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(italic/merriweather-sans-350italic.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-italic - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src:
+		local(""),
+		url(italic/merriweather-sans-italic.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(italic/merriweather-sans-italic.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-500italic - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src:
+		local(""),
+		url(italic/merriweather-sans-500italic.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(italic/merriweather-sans-500italic.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* merriweather-sans-700italic - latin */
+@font-face {
+	font-family: "Merriweather Sans";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src:
+		local(""),
+		url(italic/merriweather-sans-700italic.woff2) format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+		url(italic/merriweather-sans-700italic.woff) format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
