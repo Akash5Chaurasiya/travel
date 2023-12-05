@@ -4,7 +4,7 @@
 }
 
 .company-logo {
-    height: 100px;
+    height: 90px;
     width: 210px;
 }
 
@@ -59,6 +59,7 @@
     font-weight: bold;
     align-items: center;
     font-family: 'Merriweather Sans', sans-serif"
+
 }
 
 @media screen and (max-width: 1250px) {
@@ -145,7 +146,7 @@
     justify-content: space-evenly;
     border: 1px solid #000;
     width: '100%';
-    padding: 30px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 1250px) {
@@ -172,7 +173,7 @@
     text-align: center;
     color: #fff;
     padding: 10px;
-    background-color: rgba(0,0,0,.45);
+    background-color: rgba(0, 0, 0, .45);
     border-radius: 5px;
 }
 
@@ -276,27 +277,25 @@ input[type="submit"]:hover {
     margin-left: 30px;
 }
 
-.high-class>h2 {
-    margin-left: 100px;
-}
-
 .section {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
 }
+
 @media screen and (max-width: 768px) {
     .section {
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
 
 /* For small-sized screens */
 @media screen and (max-width: 480px) {
     .section {
-        flex-direction: column; 
+        flex-direction: column;
     }
 }
+
 .header-main__nav {
     width: fit-content;
 }
@@ -390,17 +389,31 @@ input[type="submit"]:hover {
 .hamburger-menu.active .mobile-menu {
     display: block;
 }
-h2{
+
+h2 {
     color: white;
 }
+
 .feature {
     flex-direction: row;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
+    vertical-align: top;
+    padding-right: 5%;
+    /* Adjust the space between items */
+    margin-left: 20px;
+    /* Adjust the space between items */
+    border-right: 1px solid #000;
+
 }
+.feature:last-child {
+    border-right: none; /* Remove border for the last item */
+}
+
 .feature img {
-    max-width: 80px; /* Adjust image width if needed */
+    max-width: 80px;
+    /* Adjust image width if needed */
     margin-right: 10px;
 }
 
@@ -412,14 +425,35 @@ h2{
     border-radius: 8px;
     margin-top: 25px;
 }
+
 @media screen and (max-width: 1290px) {
     #responsiveBtn {
         padding: 20px 100px;
         font-size: 12px;
     }
 }
-.header-main__lvl-one{
+
+.header-main__lvl-one {
     display: flex;
     align-items: center;
     padding: 0;
+}
+
+.menu-item {
+    position: relative;
+    display: inline-block;
+}
+
+.button {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
 }
