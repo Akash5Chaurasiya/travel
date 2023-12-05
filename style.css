@@ -27,8 +27,24 @@
     margin-right: 20px;
     display: inline-block;
     align-self: center;
-
 }
+
+@media screen and (max-width: 1250px) {
+    .menu-item {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 10px; /* Add space between items on smaller screens */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu-item {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+
 
 .header-main {
     position: -webkit-sticky;
@@ -176,7 +192,20 @@
     background-color: rgba(0, 0, 0, .45);
     border-radius: 5px;
 }
+@media screen and (max-width: 768px) {
+    .image-text {
+        top: 50%;
+        padding: 8px;
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .image-text {
+        top: 45%;
+        padding: 6px;
+        font-size: 14px;
+    }
+}
 .image-text h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -395,17 +424,26 @@ h2 {
 }
 
 .feature {
-    flex-direction: row;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    vertical-align: top;
     padding-right: 5%;
-    /* Adjust the space between items */
     margin-left: 20px;
-    /* Adjust the space between items */
     border-right: 1px solid #000;
+}
 
+@media screen and (max-width: 768px) {
+    .feature {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 0;
+        margin-left: 0;
+        border-right: none;
+    }
+
+    .feature:not(:last-child) {
+        margin-bottom: 20px; /* Add space between items on smaller screens */
+    }
 }
 .feature:last-child {
     border-right: none; /* Remove border for the last item */
