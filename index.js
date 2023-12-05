@@ -15,9 +15,10 @@ window.addEventListener("click", function (event) {
     }
 });
 function toggleReadMore() {
-    var moreText = document.getElementById("moreText");
-    var buttonText = document.querySelector("button");
-    if (moreText.style.display === "none") {
+    const moreText = document.getElementById("moreText");
+    const buttonText = document.querySelector("button");
+
+    if (moreText.style.display === "none" || !moreText.style.display) {
         moreText.style.display = "block";
         buttonText.textContent = "Read Less";
     } else {
@@ -25,7 +26,7 @@ function toggleReadMore() {
         buttonText.textContent = "See More";
     }
 }
-module.exports = { toggleReadMore };
+
 const hamburgerIcon = document.querySelector('.hamburger-icon');
 const mobileMenuList = document.querySelector('.mobile-menu-list');
 mobileMenuList.style.display = 'none';

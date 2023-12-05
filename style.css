@@ -278,7 +278,18 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: space-evenly;
 }
+@media screen and (max-width: 768px) {
+    .section {
+        flex-direction: column; 
+    }
+}
 
+/* For small-sized screens */
+@media screen and (max-width: 480px) {
+    .section {
+        flex-direction: column; 
+    }
+}
 .header-main__nav {
     width: fit-content;
 }

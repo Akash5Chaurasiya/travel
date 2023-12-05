@@ -1,26 +1,55 @@
-const { toggleReadMore } = require(".");
+function toggleReadMore() {
+    const moreText = document.getElementById("moreText");
+    const buttonText = document.querySelector("button");
+
+    if (moreText.style.display === "none" || !moreText.style.display) {
+        moreText.style.display = "block";
+        buttonText.textContent = "Read Less";
+    } else {
+        moreText.style.display = "none";
+        buttonText.textContent = "See More";
+    }
+}
+
 
 describe('toggleReadMore function', () => {
-    test('toggles display and button text', () => {
-        // Set up the initial HTML structure
+    let moreText;
+    let buttonText;
+    beforeEach(() => {
         document.body.innerHTML = `
-            <div class="section">
-                <div>
-                    <p class="p-tag" id="moreText" style="display: none;">Hidden text</p>
-                    <button onclick="toggleReadMore()">See More</button>
-                </div>
-            </div>
-        `;
+        <div id="moreText" style="display: none;">Some more text</div>
+        <button>See More</button>
+      `;
+        moreText = document.getElementById("moreText");
+        buttonText = document.querySelector("button");
+    });
+    test('should toggle visibility and button text correctly', () => {
+        // Initial state
+        expect(moreText.style.display).toBe('none');
+        expect(buttonText.textContent).toBe('See More');
         toggleReadMore();
-        const moreText = document.getElementById('moreText');
-        const buttonText = document.querySelector('button');
         expect(moreText.style.display).toBe('block');
-        expect(buttonText.textContent).toBe('Read Less');        
+        expect(buttonText.textContent).toBe('Read Less');
+
         toggleReadMore();
-        const updatedMoreText = document.getElementById('moreText');
-        const updatedButtonText = document.querySelector('button');
-        expect(updatedMoreText.style.display).toBe('none');
-        expect(updatedButtonText.textContent).toBe('See More');
+        expect(moreText.style.display).toBe('none');
+        expect(buttonText.textContent).toBe('See More');
+    });
+
+    test('should handle initial display state as "block"', () => {
+        moreText.style.display = 'block';
+        buttonText.textContent = 'Read Less';
+        toggleReadMore();
+        expect(moreText.style.display).toBe('none');
+        expect(buttonText.textContent).toBe('See More');
+    });
+
+    test('should handle undefined display style', () => {
+        // Set display style to undefined
+        moreText.style.display = undefined;
+        toggleReadMore();
+        expect(moreText.style.display).toBe('block');
+        expect(buttonText.textContent).toBe('Read Less');
     });
 });
 
