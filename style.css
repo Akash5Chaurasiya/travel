@@ -1,0 +1,374 @@
+.favicon-icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* Styling for the company logo */
+.company-logo {
+    height: 100px;
+    /* Set the desired height */
+    width: 210px;
+    /* Set the desired width */
+    /* Adjust as needed */
+}
+
+/* Styling for the main navigation container */
+.nav-main {
+    display: flex;
+    flex-direction: row;
+    /* Horizontal arrangement of items */
+    justify-content: space-between;
+    /* Evenly distribute items along the main axis */
+    align-items: center;
+    position: relative;
+    /* Center items vertically */
+    /* Adjust as needed */
+}
+
+/* Styling for individual menu items */
+.menu-item {
+    margin-right: 20px;
+    /* Adjust spacing between menu items */
+    display: inline-block;
+    align-self: center;
+}
+
+.header-main {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--wp-admin-bar-height);
+    z-index: var(--header-main-z-index);
+    display: block;
+    background-color: var(--color-white)
+}
+
+.header-main__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-white)
+}
+
+.anchor {
+    text-decoration: none;
+    font-size: 18px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+    padding: 32px 0 26px 0;
+    display: block;
+    margin: 0 14px;
+    color: #5b6a6a;
+}
+
+@media screen and (max-width: 1250px) {
+    .anchor {
+        font-size: 16px;
+        padding: 16px 0 12px 0;
+        margin: 0 8px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .anchor {
+        font-size: 14px;
+        padding: 16px 0 12px 0;
+        margin: 0 5px;
+    }
+}
+
+.menu-item a {
+    display: block;
+    /* Ensure the <a> tag takes the full space of the button */
+    text-decoration: none;
+    /* Remove underline on hover */
+}
+
+.menu-item a:hover {
+    cursor: pointer;
+    /* Change cursor to a pointer on hover */
+}
+
+.menu-item.call .button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.btn {
+    color: #5b6a6a;
+}
+
+.btn1 {
+    border: 1px solid #5b6a6a;
+    /* padding: 10px 20px; */
+    padding: 12px 14px;
+    border-radius: 5px;
+    fill: teal;
+    background-color: teal;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.country {
+    border: 1px solid #000;
+    padding: 13px 14px 12px 14px;
+}
+
+.nav-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid #000;
+    width: '100%';
+    padding: 30px;
+}
+
+@media screen and (max-width: 1250px) {
+    .nav-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.image-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.image-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.image-text p {
+    font-size: 1.2rem;
+    /* Adjust paragraph font size */
+    line-height: 1.5;
+    /* Adjust line height for better readability */
+}
+
+.heading {
+    font-size: calc(0.75vw + 20px);
+    margin-bottom: var(--h3-spacing);
+    color: #5b6a6a;
+}
+
+.p-tag {
+    display: flex;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #5b6a6a;
+
+}
+
+/* Style for form container */
+.enquiry-form {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for form groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style for labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for text inputs, date inputs, and number inputs */
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 90%;
+    /* Take full width of the container */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.high-class {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(30% - 12px);
+    justify-content: center;
+    /* Horizontally center content */
+    align-items: center;
+    /* Vertically center content */
+}
+
+.form-class {
+    align-self: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.high-class>h2 {
+    margin-left: 100px;
+}
+
+.section {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-main__nav {
+    width: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+
+    /* Adjust the styles for smaller screens */
+    .company-logo {
+        width: 150px;
+        /* Adjust the width of the company logo */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .nav-main {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        /* Center items horizontally */
+    }
+
+    .menu-item {
+        margin-right: 0;
+        /* Remove right margin */
+        margin-bottom: 10px;
+        /* Add bottom margin for spacing */
+        text-align: center;
+        /* Center the text */
+    }
+
+    .high-class {
+        width: calc(100% - 24px);
+        /* Adjust width for full width */
+        margin: 12px;
+        /* Add margin for spacing */
+    }
+
+    .form-class {
+        margin-left: 0;
+        /* Remove left margin */
+    }
+
+    .high-class>h2 {
+        margin-left: 0;
+        /* Remove left margin */
+        text-align: center;
+        /* Center the text */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-main__nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+
+    }
+}
+
+/* For screens larger than 768px, show the navigation */
+@media screen and (min-width: 769px) {
+    .header-main__nav {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/* Styles for the hamburger icon */
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+/* Display the mobile menu when the hamburger icon is clicked */
+.hamburger-menu.active .mobile-menu {
+    display: block;
+}
